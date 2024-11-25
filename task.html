@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .topnav{
+            display: flex;
+            gap: 20px;
+            background-color: black;
+            color: white;
+
+        }
+        .option{
+            /* display: none; */
+            position: absolute;
+            /* left: 0; */
+            background-color: red;
+            height: 0px;
+            width: 0px;
+            overflow: hidden;
+            /* transition: width 0.5s ease-in-out, background-color 0.5s; */
+            transition: 2s;
+            
+        }
+        .option{
+            width: fit-content;
+            position: relative;
+        }
+        .multih:hover .option{
+            display: block;
+            /* height: 5px; */
+            width: 100%;
+            /* transition: 2s; */
+            /* width: 200px; */
+            color: red;
+        
+        }
+        .multih:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav class="topnav">
+        <div class="multih">Home
+            <section class="option">
+                <div>home1</div>
+                <div>home2</div>
+                <div>home3</div>
+            </section>
+        </div>
+        <div class="multih">About
+            <section class="option">
+                <div>about1</div>
+                <div>about2</div>
+                <div>about3</div>
+            </section>
+        </div>
+        <div class="multih">section
+            <section class="option">
+                <div>sec1</div>
+                <div>sec2</div>
+                <div>sec3</div>
+            </section>
+        </div>
+        <div class="multih">contact
+            <section class="option">
+                <div>cont1</div>
+                <div>cont2</div>
+                <div>cont3</div>
+            </section>
+            
+        </div>
+    </nav>
+</body>
+</html>

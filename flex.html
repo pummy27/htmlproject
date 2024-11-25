@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .flex{
+            display: flex;
+        }
+        .topnav{
+            gap: 10px;
+            font-size: 25px;
+            background-color: black;
+            padding: 20px;
+
+        }
+        .topnav div{
+            color: white;
+
+        }
+        .optioncont{
+            display: none;
+            position: absolute;
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+
+        .multiop:hover .optioncont{
+            display: block;
+        }
+         
+    </style>
+</head>
+<body>
+<nav class="topnav flex">
+    <div>homr</div>
+    <div>about</div>
+    <div class="multiop">section
+        <section class="optioncont">
+        <div>section1</div>
+        <div>section2</div>
+        <div>section3</div>
+    </section>
+    </div>
+    <div>contact</div>
+</nav>
+</body>
+</html>
